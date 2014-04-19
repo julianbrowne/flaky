@@ -1,0 +1,29 @@
+<html>
+<head>
+    <link rel="stylesheet" media="all" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="flaky.js"></script>
+</head>
+<body>
+    <img src="flaky.jpg" class="logo">
+    <h1>Flaky Console</h1>
+    <div id="console"></div>
+    <script>
+        var socket = io.connect('http://127.0.0.1:9013');
+
+        socket.on('flaky-init', function (state) { 
+            document.getElementById('console').innerHTML = "";
+            state.servers.forEach(function(server) { 
+                Flaky.addServerToDisplay(server);
+            });
+        });
+
+        socket.on('flaky-stat', function (server) { 
+            if(Flaky.elementExists(server.port))
+                document.getElementById(server.port).className = Flaky.serverStateString(server);
+            else
+                Flaky.addServerToDisplay(server);
+        });
+    </script>
+</body>
+</html>

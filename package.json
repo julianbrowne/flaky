@@ -1,0 +1,20 @@
+{
+  "name": "flaky",
+  "version": "0.0.2",
+  "description": "starts a number of http listeners then randomly stops and restarts them",
+  "main": "index.js",
+  "dependencies": { 
+    "node-static": "0.7.3",
+    "socket.io": "0.9.16"
+  },
+  "repository": { 
+    "type": "git",
+    "url": "https://github.com/julianbrowne/flaky"
+  },
+  "author": "Julian Browne",
+  "license": "MIT",
+  "bugs": { 
+    "url": "https://github.com/julianbrowne/flaky/issues"
+  },
+  "homepage": "https://github.com/julianbrowne/flaky"
+}
