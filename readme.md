@@ -6,9 +6,9 @@ Flaky also emits status messages on a web socket for interested browsers. There'
 
 ## Bundled Example
 
-    git clone 
+    git clone https://github.com/julianbrowne/flaky.git
 
-    cd 
+    cd flaky
 
     node flaky {number_of_servers}
 
