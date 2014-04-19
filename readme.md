@@ -25,3 +25,8 @@ Flaky also emits status messages on a web socket for interested browsers. There'
     f.startServers(9300);             // start unreliable http servers starting at {port}
     f.startClientChannel(9013);       // start console at http://127.0.0.1:9013
     f.startChaos(10000);              // can be stopped with f.stopChaos();
+
+A monitor page would then be available at http://127.0.0.1:9013
+
+[!flaky-console](https://raw.githubusercontent.com/julianbrowne/flaky/master/screen-shot.png)
+
