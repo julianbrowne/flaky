@@ -28,5 +28,5 @@ Flaky also emits status messages on a web socket for interested browsers. There'
 
 A monitor page would then be available at http://127.0.0.1:9013
 
-[!flaky-console](https://raw.githubusercontent.com/julianbrowne/flaky/master/screen-shot.png)
+![flaky-console](https://raw.githubusercontent.com/julianbrowne/flaky/master/screen-shot.png)
 
